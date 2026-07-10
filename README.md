@@ -47,3 +47,4 @@ Generative AI product × AI security — building things people actually use, an
 - 💼 LinkedIn — **[in/myan-patel-1857943ba](https://www.linkedin.com/in/myan-patel-1857943ba/)**
 
 <sub><i>Still in high school. Still shipping.</i></sub>
+
