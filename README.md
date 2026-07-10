@@ -18,7 +18,8 @@ Aspiring **GenAI Product Manager & AI Security Engineer**. I like shipping real 
 | Project | What it is | Stack |
 |---------|-----------|-------|
 | **[FocusOS](https://focusos.live)** | AI study app for high schoolers that adapts to your real attention span | React · Vite · Supabase · Claude API |
- | **[SlideAir](https://slideair.vercel.app)** | Present with your hands — webcam gestures drive slides, laser, blackout. All on-device | React · TypeScript · MediaPipe · WASM |
+| **[NYE Media](https://nye-media.vercel.app)** | Landing + capture platform for a youth entrepreneurship nonprofit | React · Vite · Tailwind v4 · Motion |
+| **[SlideAir](https://slideair.vercel.app)** | Present with your hands — webcam gestures drive slides, laser, blackout. All on-device | React · TypeScript · MediaPipe · WASM |
 | **[PromptProbe](https://promptprobe.vercel.app)** | Security scanner for AI chatbots — OWASP LLM Top 10, judged by a second model | React · TypeScript · Vercel Functions |
 | **[VulnScan](https://vulnscan-xi.vercel.app)** | OWASP Top 10 scanner — paste code or a repo link, get findings in seconds | React · Supabase Edge · AI |
 | **[SlideStack](https://slidestack-beta.vercel.app)** | Type a topic, get ready-to-post Instagram carousel PNGs. 100% client-side, BYOK | React · Claude · HTML Canvas |
