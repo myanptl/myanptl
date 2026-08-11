@@ -20,6 +20,10 @@ jobs:
       contents: write
 
     steps:
+      # Needed for scripts/stats.mjs. Must run before the generators so it does
+      # not clobber the dist/ they write into.
+      - uses: actions/checkout@v4
+
       - name: Generate snake
         uses: Platane/snk@v3
         id: snake
@@ -30,6 +34,15 @@ jobs:
           outputs: |
             dist/snake-dark.svg?color_snake=#f2ece2&color_dots=#1c1815,#43352b,#7a4f33,#b06a3e,#d97757
             dist/snake-light.svg?color_snake=#24211c&color_dots=#f0ece4,#e3d3c2,#d0a98c,#bb7f5c,#b42318
+
+      # Self-hosted stats card. The shared github-readme-stats instance returns
+      # 503 often enough to show broken images on the profile, so this renders
+      # the same information from the public API into dist/stats.svg instead.
+      - name: Generate stats card
+        run: node scripts/stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: ${{ github.repository_owner }}
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4

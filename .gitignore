@@ -1,3 +1,2 @@
-
-# ruflo/claude-flow local artifacts
-.claude-flow/
+dist/
+node_modules/

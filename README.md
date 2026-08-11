@@ -35,10 +35,7 @@ on the floor, then pitches to a real panel. 501(c)(3) in progress.
   <img alt="A snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/myanptl/myanptl/output/snake-dark.svg" width="100%">
 </picture>
 
-<p>
-  <img height="150" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=myanptl&show_icons=true&hide_border=true&rank_icon=github&bg_color=1c1815&title_color=d97757&text_color=d9cfc2&icon_color=c98a2b">
-  <img height="150" alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=myanptl&layout=compact&hide_border=true&bg_color=1c1815&title_color=d97757&text_color=d9cfc2">
-</p>
+<img alt="Repos, languages and contributions" src="https://raw.githubusercontent.com/myanptl/myanptl/output/stats.svg" width="520">
 
 ### Off the keyboard
 
