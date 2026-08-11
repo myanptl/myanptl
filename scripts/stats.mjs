@@ -112,7 +112,11 @@ const legend = top
 const stats = [
   ["REPOS", String(user.public_repos)],
   ["LANGUAGES", String(Object.keys(bytes).length)],
-  ...(contributions !== null ? [["CONTRIBUTIONS", fmt(contributions)]] : []),
+  // Labelled "PUBLIC" deliberately. GITHUB_TOKEN only sees public
+  // contributions, so this number is lower than the one on the profile graph
+  // above it, which includes private repos. An unqualified "CONTRIBUTIONS"
+  // reading 328 directly under a graph saying 362 looks like a bug.
+  ...(contributions !== null ? [["PUBLIC CONTRIBUTIONS", fmt(contributions)]] : []),
 ];
 
 const statBlocks = stats
