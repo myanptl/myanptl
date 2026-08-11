@@ -1,0 +1,40 @@
+name: snake
+
+# Regenerates the contribution-grid snake every morning, plus on demand and on
+# every push to main so a palette change shows up immediately instead of waiting
+# for the next cron tick.
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # The action commits the generated SVGs to the `output` branch, so the job
+    # token needs write access. Declaring it here beats relying on the repo-wide
+    # "Read and write permissions" toggle being set.
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate snake
+        uses: Platane/snk@v3
+        id: snake
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          # Warm palette to match the portfolio, not GitHub green.
+          # color_dots takes exactly 5 stops: zero contributions -> highest.
+          outputs: |
+            dist/snake-dark.svg?color_snake=#f2ece2&color_dots=#1c1815,#43352b,#7a4f33,#b06a3e,#d97757
+            dist/snake-light.svg?color_snake=#24211c&color_dots=#f0ece4,#e3d3c2,#d0a98c,#bb7f5c,#b42318
+
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
