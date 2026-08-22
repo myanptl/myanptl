@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" width="520" height="200" role="img" aria-label="GitHub stats for myanptl">
+  <style>
+    .n { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+    .hd  { font-size: 12px; fill: #d97757; letter-spacing: 2px; }
+    .num { font-size: 34px; font-weight: 700; fill: #f2ece2; }
+    .lbl { font-size: 11px; fill: #8e8779; letter-spacing: 1.2px; }
+    .lg  { font-size: 11px; fill: #a89e8f; }
+    .ft  { font-size: 10px; fill: #6f685c; }
+  </style>
+  <g class="n">
+    <rect width="520" height="200" rx="10" fill="#1c1815" stroke="#2b2521"/>
+    <rect x="0" y="0" width="4" height="200" rx="2" fill="#d97757"/>
+
+    <text class="hd" x="26" y="42">MYANPTL</text>
+
+    <text class="num" x="26.0" y="82">11</text>
+    <text class="lbl" x="26.0" y="102">REPOS</text>
+    <text class="num" x="182.0" y="82">7</text>
+    <text class="lbl" x="182.0" y="102">LANGUAGES</text>
+    <text class="num" x="338.0" y="82">426</text>
+    <text class="lbl" x="338.0" y="102">PUBLIC CONTRIBUTIONS</text>
+
+    <rect x="26.0" y="126" width="352.2" height="9" rx="4.5" fill="#d97757"/>
+    <rect x="380.2" y="126" width="38.1" height="9" rx="4.5" fill="#c98a2b"/>
+    <rect x="420.3" y="126" width="26.2" height="9" rx="4.5" fill="#7ea24f"/>
+    <rect x="448.5" y="126" width="22.8" height="9" rx="4.5" fill="#b8794a"/>
+    <rect x="473.3" y="126" width="14.1" height="9" rx="4.5" fill="#8a7f6d"/>
+    <circle cx="30" cy="164" r="4" fill="#d97757"/>
+    <text class="lg" x="40" y="168">JavaScript 76%</text>
+    <circle cx="126" cy="164" r="4" fill="#c98a2b"/>
+    <text class="lg" x="136" y="168">TypeScript 9%</text>
+    <circle cx="222" cy="164" r="4" fill="#7ea24f"/>
+    <text class="lg" x="232" y="168">Shell 6%</text>
+    <circle cx="281" cy="164" r="4" fill="#b8794a"/>
+    <text class="lg" x="291" y="168">CSS 5%</text>
+    <circle cx="325.2" cy="164" r="4" fill="#8a7f6d"/>
+    <text class="lg" x="335.2" y="168">Python 3%</text>
+
+    <text class="ft" x="26" y="190">updated 2026-08-22</text>
+  </g>
+</svg>
