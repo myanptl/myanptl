@@ -1,7 +1,7 @@
 <img src="./assets/header.svg" alt="Myan Patel" width="100%">
 
 <a href="https://perihelion-blue.vercel.app">
-  <img src="./assets/motion/perihelion.gif" alt="A turbocharger separating into nine parts as the page scrolls" width="100%">
+  <img src="./assets/motion/perihelion.webp" alt="A turbocharger separating into nine parts as the page scrolls" width="100%">
 </a>
 
 <sub>PERIHELION P-32, coming apart on scroll. Rendered live in the browser, not a video file.
