@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" width="520" height="200" role="img" aria-label="GitHub stats for myanptl">
+  <style>
+    .n { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+    .hd  { font-size: 12px; fill: #94928d; letter-spacing: 2px; }
+    .num { font-size: 34px; font-weight: 700; fill: #f5f4f1; }
+    .lbl { font-size: 11px; fill: #77756f; letter-spacing: 1.2px; }
+    .lg  { font-size: 11px; fill: #a3a19b; }
+    .ft  { font-size: 10px; fill: #5e5c57; }
+  </style>
+  <g class="n">
+    <rect width="520" height="200" rx="10" fill="#0d0d0c" stroke="#252521"/>
+    <rect x="0" y="0" width="4" height="200" rx="2" fill="#f5f4f1"/>
+
+    <text class="hd" x="26" y="42">MYANPTL</text>
+
+    <text class="num" x="26.0" y="82">11</text>
+    <text class="lbl" x="26.0" y="102">REPOS</text>
+    <text class="num" x="182.0" y="82">7</text>
+    <text class="lbl" x="182.0" y="102">LANGUAGES</text>
+    <text class="num" x="338.0" y="82">504</text>
+    <text class="lbl" x="338.0" y="102">PUBLIC CONTRIBUTIONS</text>
+
+    <rect x="26.0" y="126" width="350.1" height="9" rx="4.5" fill="#f2f0ec"/>
+    <rect x="378.1" y="126" width="43.2" height="9" rx="4.5" fill="#c2c0bb"/>
+    <rect x="423.3" y="126" width="26.7" height="9" rx="4.5" fill="#94928d"/>
+    <rect x="452.0" y="126" width="18.9" height="9" rx="4.5" fill="#6a6862"/>
+    <rect x="472.8" y="126" width="14.4" height="9" rx="4.5" fill="#454340"/>
+    <circle cx="30" cy="164" r="4" fill="#f2f0ec"/>
+    <text class="lg" x="40" y="168">JavaScript 75%</text>
+    <circle cx="145.8" cy="164" r="4" fill="#c2c0bb"/>
+    <text class="lg" x="155.8" y="168">TypeScript 10%</text>
+    <circle cx="261.6" cy="164" r="4" fill="#94928d"/>
+    <text class="lg" x="271.6" y="168">Shell 6%</text>
+    <circle cx="337.20000000000005" cy="164" r="4" fill="#6a6862"/>
+    <text class="lg" x="347.20000000000005" y="168">CSS 4%</text>
+    <circle cx="399.40000000000003" cy="164" r="4" fill="#454340"/>
+    <text class="lg" x="409.40000000000003" y="168">Python 4%</text>
+
+    <text class="ft" x="26" y="190">updated 2026-09-05</text>
+  </g>
+</svg>
