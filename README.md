@@ -20,29 +20,38 @@ connect high school builders with the founders, investors and operators who take
 hosted our first Innovation Challenge on 27 July 2026 at RSM in Boston: one prompt, five hours, mentors
 on the floor, then pitches to a real panel. 501(c)(3) in progress.
 
-### Motion studies
+### Motion
 
-Four objects rebuilt in the browser to work out how motion carries an explanation.
-Each is a single scroll: the thing separates along the axis it was assembled on, and
-every part names itself on the way out. The turbocharger above is the third of them.
+Five objects rebuilt in the browser from primitives. No model files, no textures, nothing
+downloaded: every part is generated in code. Four of them come apart on scroll, along the
+axis they were assembled on, and each part names itself on the way out.
 
 <table>
   <tr>
-    <td width="50%">
+    <td width="33%" valign="top">
       <a href="https://kilonova-eta.vercel.app"><img src="./assets/motion/kilonova.png" alt="A graphics card exploded into nine layers" width="100%"></a>
       <br><b><a href="https://kilonova-eta.vercel.app">KILONOVA KX-90</a></b>
-      <br><sub>A graphics card, nine parts, split along its lamination axis</sub>
+      <br><sub>Graphics card, 9 parts, split along its lamination axis</sub>
     </td>
-    <td width="50%">
+    <td width="33%" valign="top">
       <a href="https://sidereal-flame.vercel.app"><img src="./assets/motion/sidereal.png" alt="A hard disk drive exploded into seven parts" width="100%"></a>
       <br><b><a href="https://sidereal-flame.vercel.app">SIDEREAL SD-24</a></b>
-      <br><sub>A hard disk drive, seven parts, split along its stacking axis</sub>
+      <br><sub>Hard disk drive, 7 parts, split along its stacking axis</sub>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://myan-portfolio.vercel.app"><img src="./assets/motion/turbofan.png" alt="A jet engine exploded into eleven parts, still spinning" width="100%"></a>
+      <br><b><a href="https://myan-portfolio.vercel.app">Turbofan</a></b>
+      <br><sub>Jet engine, 11 parts, and it keeps spinning while it is pulled apart</sub>
     </td>
   </tr>
 </table>
 
-The fourth one is load bearing: the turbofan on
-**[my portfolio](https://myan-portfolio.vercel.app)** keeps spinning while it is pulled apart.
+<sub>Stills are black and white on purpose. The work is not. Open one.</sub>
+
+The fifth changes the motor instead of the object. Four teardowns in, what they had in
+common was not the object, it was that scroll drove every one of them, which is why they
+started to blur together. **ROSENSWEIG** is driven by sound instead: the page synthesises
+a track, and a dish of ferrofluid spikes into a lattice on the beat. Not deployed yet.
 
 ### Shipped
 
