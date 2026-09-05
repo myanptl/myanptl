@@ -23,9 +23,12 @@ async function api(path) {
   return res.json();
 }
 
-// Warm ramp shared with the header and the snake. Deliberately not the
-// stock language colours, which clash with everything else here.
-const RAMP = ["#d97757", "#c98a2b", "#7ea24f", "#b8794a", "#8a7f6d"];
+// Greyscale ramp shared with the header and the snake. The stock language
+// colours are a five-way rainbow and the old warm ramp was barely better:
+// orange, amber, green and two browns fighting inside one 190px card. Value
+// alone separates the segments here, so the only colour anywhere on this
+// profile is the heat inside the render frames.
+const RAMP = ["#f2f0ec", "#c2c0bb", "#94928d", "#6a6862", "#454340"];
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const fmt = (n) => (n >= 1000 ? `${(n / 1000).toFixed(1)}k` : String(n));
 
@@ -98,14 +101,25 @@ const segments = top
   })
   .join("\n    ");
 
+// The advance has to measure the whole label, percentage included. Measuring
+// only the language name left every entry about four characters short, so each
+// dot landed on top of the previous entry's "%". 11px in a monospace face
+// advances ~0.61em per character; 22px is the dot plus the gap after it.
+const CH = 6.7;
+const GAP = 22;
 let lx = BAR_X;
 const legend = top
   .map((l) => {
+    const label = `${esc(l.name)} ${l.pct.toFixed(0)}%`;
+    const w = GAP + label.length * CH;
+    // Stop rather than run off the card edge if the top languages have long names.
+    if (lx + w > BAR_X + BAR_W) return "";
     const item = `<circle cx="${lx + 4}" cy="164" r="4" fill="${l.color}"/>
-    <text class="lg" x="${lx + 14}" y="168">${esc(l.name)} ${l.pct.toFixed(0)}%</text>`;
-    lx += 22 + esc(l.name).length * 7.4;
+    <text class="lg" x="${lx + 14}" y="168">${label}</text>`;
+    lx += w;
     return item;
   })
+  .filter(Boolean)
   .join("\n    ");
 
 // Built as a list so the card still balances if contributions are unavailable.
@@ -130,15 +144,15 @@ const statBlocks = stats
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="GitHub stats for ${esc(USER)}">
   <style>
     .n { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
-    .hd  { font-size: 12px; fill: #d97757; letter-spacing: 2px; }
-    .num { font-size: 34px; font-weight: 700; fill: #f2ece2; }
-    .lbl { font-size: 11px; fill: #8e8779; letter-spacing: 1.2px; }
-    .lg  { font-size: 11px; fill: #a89e8f; }
-    .ft  { font-size: 10px; fill: #6f685c; }
+    .hd  { font-size: 12px; fill: #94928d; letter-spacing: 2px; }
+    .num { font-size: 34px; font-weight: 700; fill: #f5f4f1; }
+    .lbl { font-size: 11px; fill: #77756f; letter-spacing: 1.2px; }
+    .lg  { font-size: 11px; fill: #a3a19b; }
+    .ft  { font-size: 10px; fill: #5e5c57; }
   </style>
   <g class="n">
-    <rect width="${W}" height="${H}" rx="10" fill="#1c1815" stroke="#2b2521"/>
-    <rect x="0" y="0" width="4" height="${H}" rx="2" fill="#d97757"/>
+    <rect width="${W}" height="${H}" rx="10" fill="#0d0d0c" stroke="#252521"/>
+    <rect x="0" y="0" width="4" height="${H}" rx="2" fill="#f5f4f1"/>
 
     <text class="hd" x="${BAR_X}" y="42">MYANPTL</text>
 

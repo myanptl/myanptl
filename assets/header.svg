@@ -1,9 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="Myan Patel — building AI products, then breaking them on purpose">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="Myan Patel, building AI products then breaking them on purpose">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1c1815"/>
-      <stop offset="55%" stop-color="#17130f"/>
-      <stop offset="100%" stop-color="#120f0c"/>
+    <!-- Monochrome on purpose. The three coloured glow orbs that used to sit
+         here read as decoration; the only colour on this profile now lives
+         inside the render frames below, where it means heat. -->
+    <linearGradient id="ground" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#111110"/>
+      <stop offset="100%" stop-color="#0a0a09"/>
     </linearGradient>
 
     <filter id="grain">
@@ -11,22 +13,10 @@
       <feColorMatrix type="saturate" values="0"/>
     </filter>
 
-    <filter id="soft" x="-70%" y="-70%" width="240%" height="240%">
-      <feGaussianBlur stdDeviation="26"/>
-    </filter>
-
-    <radialGradient id="ember">
-      <stop offset="0%" stop-color="#d97757" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#d97757" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="moss">
-      <stop offset="0%" stop-color="#7ea24f" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#7ea24f" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="amberO">
-      <stop offset="0%" stop-color="#c98a2b" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#c98a2b" stop-opacity="0"/>
-    </radialGradient>
+    <!-- 40px technical grid, the same drafting language as the teardowns. -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
 
     <clipPath id="typeClip">
       <rect x="64" y="176" width="0" height="34">
@@ -35,35 +25,40 @@
     </clipPath>
 
     <style>
-      .n  { font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace; }
-      .nm { font-size: 74px; font-weight: 700; letter-spacing: -2.5px; fill: #f2ece2; }
-      .tp { font-size: 25px; fill: #d9cfc2; }
-      .mt { font-size: 17px; fill: #8e8779; letter-spacing: 0.5px; }
-      .kw { fill: #d97757; }
-      .cm { fill: #6f6a60; }
-      .cur { fill: #d97757; }
+      .n   { font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace; }
+      .nm  { font-size: 74px; font-weight: 700; letter-spacing: -2.5px; fill: #f5f4f1; }
+      .tp  { font-size: 25px; fill: #b9b7b2; }
+      .mt  { font-size: 17px; fill: #77756f; letter-spacing: 0.5px; }
+      .kw  { fill: #8e8c86; }
+      .cm  { fill: #6c6a65; }
+      .tk  { stroke: #ffffff; stroke-opacity: 0.22; stroke-width: 1; }
+      .cur { fill: #f5f4f1; }
       @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
       .cur { animation: blink 1.05s steps(1) infinite; }
-      @keyframes drift1 { 0%,100% { transform: translate(0,0) } 50% { transform: translate(34px,-22px) } }
-      @keyframes drift2 { 0%,100% { transform: translate(0,0) } 50% { transform: translate(-28px,18px) } }
-      @keyframes drift3 { 0%,100% { transform: translate(0,0) } 50% { transform: translate(18px,26px) } }
-      .o1 { animation: drift1 15s ease-in-out infinite; }
-      .o2 { animation: drift2 19s ease-in-out infinite; }
-      .o3 { animation: drift3 23s ease-in-out infinite; }
+      /* The three plates drift apart and back, the same explode-and-return
+         gesture the teardown pages run on scroll. */
+      @keyframes sep1 { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-13px) } }
+      @keyframes sep3 { 0%,100% { transform: translateY(0) } 50% { transform: translateY(13px) } }
+      .p1 { animation: sep1 7s ease-in-out infinite; }
+      .p3 { animation: sep3 7s ease-in-out infinite; }
     </style>
   </defs>
 
-  <rect width="1200" height="280" fill="url(#sky)"/>
-
-  <g filter="url(#soft)">
-    <circle class="o1" cx="1006" cy="96"  r="80" fill="url(#ember)"/>
-    <circle class="o2" cx="1112" cy="196" r="66" fill="url(#moss)"/>
-    <circle class="o3" cx="905"  cy="205" r="54" fill="url(#amberO)"/>
-  </g>
-
+  <rect width="1200" height="280" fill="url(#ground)"/>
+  <rect width="1200" height="280" fill="url(#grid)"/>
   <rect width="1200" height="280" filter="url(#grain)" opacity="0.05"/>
 
-  <rect x="0" y="0" width="5" height="280" fill="#d97757"/>
+  <rect x="0" y="0" width="4" height="280" fill="#f5f4f1"/>
+
+  <!-- Exploded stack, right side. Flat greyscale, no fill gradients. -->
+  <g transform="translate(1012 140) skewX(-24)" opacity="0.75">
+    <rect class="p1" x="-84" y="-56" width="168" height="15" rx="2" fill="#2e2d2a" stroke="#54524d"/>
+    <rect       x="-84" y="-8"  width="168" height="15" rx="2" fill="#3a3935" stroke="#6b6963"/>
+    <rect class="p3" x="-84" y="40"  width="168" height="15" rx="2" fill="#2e2d2a" stroke="#54524d"/>
+  </g>
+  <line class="tk" x1="1012" y1="52" x2="1012" y2="228"/>
+  <line class="tk" x1="1004" y1="52" x2="1020" y2="52"/>
+  <line class="tk" x1="1004" y1="228" x2="1020" y2="228"/>
 
   <text class="n mt" x="64" y="66">MYANPTL</text>
   <text class="n nm" x="64" y="140">Myan Patel</text>

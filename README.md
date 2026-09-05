@@ -1,5 +1,12 @@
 <img src="./assets/header.svg" alt="Myan Patel" width="100%">
 
+<a href="https://perihelion-blue.vercel.app">
+  <img src="./assets/motion/perihelion.gif" alt="A turbocharger separating into nine parts as the page scrolls" width="100%">
+</a>
+
+<sub>PERIHELION P-32, coming apart on scroll. Rendered live in the browser, not a video file.
+<b><a href="https://perihelion-blue.vercel.app">Scroll it yourself</a></b></sub>
+
 I build AI products end to end, then try to break them on purpose. Rising junior at Westford Academy,
 heading for generative AI product work with a security habit I am not planning to grow out of.
 
@@ -12,6 +19,30 @@ real attention span rather than a timer someone invented in the 1980s.
 connect high school builders with the founders, investors and operators who take them seriously. We
 hosted our first Innovation Challenge on 27 July 2026 at RSM in Boston: one prompt, five hours, mentors
 on the floor, then pitches to a real panel. 501(c)(3) in progress.
+
+### Motion studies
+
+Four objects rebuilt in the browser to work out how motion carries an explanation.
+Each is a single scroll: the thing separates along the axis it was assembled on, and
+every part names itself on the way out. The turbocharger above is the third of them.
+
+<table>
+  <tr>
+    <td width="50%">
+      <a href="https://kilonova-eta.vercel.app"><img src="./assets/motion/kilonova.png" alt="A graphics card exploded into nine layers" width="100%"></a>
+      <br><b><a href="https://kilonova-eta.vercel.app">KILONOVA KX-90</a></b>
+      <br><sub>A graphics card, nine parts, split along its lamination axis</sub>
+    </td>
+    <td width="50%">
+      <a href="https://sidereal-flame.vercel.app"><img src="./assets/motion/sidereal.png" alt="A hard disk drive exploded into seven parts" width="100%"></a>
+      <br><b><a href="https://sidereal-flame.vercel.app">SIDEREAL SD-24</a></b>
+      <br><sub>A hard disk drive, seven parts, split along its stacking axis</sub>
+    </td>
+  </tr>
+</table>
+
+The fourth one is load bearing: the turbofan on
+**[my portfolio](https://myan-portfolio.vercel.app)** keeps spinning while it is pulled apart.
 
 ### Shipped
 

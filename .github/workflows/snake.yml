@@ -40,11 +40,13 @@ jobs:
         id: snake
         with:
           github_user_name: ${{ github.repository_owner }}
-          # Warm palette to match the portfolio, not GitHub green.
+          # Greyscale, matching the header and the stats card. Not GitHub
+          # green, and no longer the warm ramp either: the profile reads as one
+          # black-and-white system, and colour is reserved for the renders.
           # color_dots takes exactly 5 stops: zero contributions -> highest.
           outputs: |
-            dist/snake-dark.svg?color_snake=#f2ece2&color_dots=#1c1815,#43352b,#7a4f33,#b06a3e,#d97757
-            dist/snake-light.svg?color_snake=#24211c&color_dots=#f0ece4,#e3d3c2,#d0a98c,#bb7f5c,#b42318
+            dist/snake-dark.svg?color_snake=#f5f4f1&color_dots=#0d0d0c,#2b2a27,#4f4d49,#8b8984,#e8e6e1
+            dist/snake-light.svg?color_snake=#1a1a18&color_dots=#f2f2ef,#d5d4d0,#a7a5a0,#6d6b66,#1a1a18
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
