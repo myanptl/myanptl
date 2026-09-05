@@ -1,11 +1,12 @@
 <img src="./assets/header.svg" alt="Myan Patel" width="100%">
 
 <a href="https://perihelion-blue.vercel.app">
-  <img src="./assets/motion/perihelion.webp" alt="A turbocharger separating into nine parts as the page scrolls" width="100%">
+  <img src="./assets/motion/perihelion.webp" alt="A turbocharger separating into nine parts and closing back together" width="100%">
 </a>
 
-<sub>PERIHELION P-32, coming apart on scroll. Rendered live in the browser, not a video file.
-<b><a href="https://perihelion-blue.vercel.app">Scroll it yourself</a></b></sub>
+<sub>PERIHELION P-32, lifted out of its page. Nine parts, one shaft, real geometry generated
+in the browser rather than a model anyone downloaded.
+<b><a href="https://perihelion-blue.vercel.app">Take it apart yourself</a></b></sub>
 
 I build AI products end to end, then try to break them on purpose. Rising junior at Westford Academy,
 heading for generative AI product work with a security habit I am not planning to grow out of.
