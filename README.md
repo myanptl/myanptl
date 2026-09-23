@@ -40,9 +40,9 @@ axis they were assembled on, and each part names itself on the way out.
       <br><sub>Hard disk drive, 7 parts, split along its stacking axis</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://myan-portfolio.vercel.app"><img src="./assets/motion/turbofan.png" alt="A jet engine exploded into eleven parts, still spinning" width="100%"></a>
-      <br><b><a href="https://myan-portfolio.vercel.app">Turbofan</a></b>
-      <br><sub>Jet engine, 11 parts, and it keeps spinning while it is pulled apart</sub>
+      <a href="https://perihelion-blue.vercel.app"><img src="./assets/motion/perihelion.png" alt="A turbocharger exploded into nine parts along its shaft" width="100%"></a>
+      <br><b><a href="https://perihelion-blue.vercel.app">PERIHELION P-32</a></b>
+      <br><sub>Turbocharger, 9 parts, split along its shaft</sub>
     </td>
   </tr>
 </table>
@@ -51,8 +51,8 @@ axis they were assembled on, and each part names itself on the way out.
 
 The fifth changes the motor instead of the object. Four teardowns in, what they had in
 common was not the object, it was that scroll drove every one of them, which is why they
-started to blur together. **ROSENSWEIG** is driven by sound instead: the page synthesises
-a track, and a dish of ferrofluid spikes into a lattice on the beat. Not deployed yet.
+started to blur together. **[ROSENSWEIG](https://rosensweig.vercel.app)** is driven by sound instead: the page synthesises
+a track, and a dish of ferrofluid spikes into a lattice on the beat.
 
 ### Shipped
 
