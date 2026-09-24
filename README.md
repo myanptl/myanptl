@@ -66,6 +66,8 @@ a track, and a dish of ferrofluid spikes into a lattice on the beat.
 | **[RepoRoast](https://reporoast-alpha.vercel.app)** | An AI roast host drags your GitHub, then hypes you up. Shareable heat score | React · Vite · Claude Haiku |
 | **[fable-jarvis](https://www.npmjs.com/package/fable-jarvis)** | A terminal assistant on the Claude Agent SDK. `npm i -g fable-jarvis` | TypeScript · Agent SDK |
 | **[etf-research-mcp](https://www.npmjs.com/package/etf-research-mcp)** | Published MCP server giving Claude live ETF research tools | TypeScript · MCP |
+| **[golive-mcp](https://github.com/myanptl/golive-mcp)** | Checks a site before you share the link: preview cards on LinkedIn, X and iMessage, SPA routes that 404 on refresh, staging leftovers. `npx golive-mcp check <url>` | TypeScript · MCP |
+| **[housestyle-mcp](https://github.com/myanptl/housestyle-mcp)** | MCP server that audits CSS for the generic AI-built look, then fixes it with real font, contrast and palette maths | TypeScript · MCP |
 | **[keyhound](https://github.com/myanptl/keyhound)** | Dependency free CLI that scans code and full git history for leaked secrets | Python · Security |
 
 ### Contribution graph, being eaten
