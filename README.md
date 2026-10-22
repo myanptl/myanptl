@@ -89,6 +89,6 @@ the finance tooling comes from.
 
 ### Elsewhere
 
-[Portfolio](https://myan-portfolio.vercel.app) · [LinkedIn](https://www.linkedin.com/in/myan-patel-1857943ba/) · [NYE Media](https://nyemedia.org)
+[Portfolio](https://myanptl.vercel.app) · [LinkedIn](https://www.linkedin.com/in/myan-patel-1857943ba/) · [NYE Media](https://nyemedia.org)
 
 <sub>Still in high school. Still shipping.</sub>
