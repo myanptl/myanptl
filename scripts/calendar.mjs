@@ -41,22 +41,26 @@ const oy = MAX_H + 28;
 const add = ([a, b], [c, d]) => [a + c, b + d];
 const p = (pts) => pts.map(([a, b]) => `${a.toFixed(1)},${b.toFixed(1)}`).join(' ');
 
+let minY = Infinity;
 const shapes = cubes.map(({ x, y, contributionCount: n, contributionLevel: lvl }) => {
   const h = n ? 3 + Math.sqrt(n / max) * MAX_H : 1;
   const [top, left, right] = COLORS[lvl];
   const b = [ox + x * WK[0] + y * DY[0], oy + x * WK[1] + y * DY[1]];
   const bw = add(b, WK), bd = add(b, DY), bwd = add(bw, DY);
   const up = ([a, c]) => [a, c - h];
+  minY = Math.min(minY, b[1] - h);
   return `<polygon fill="${left}" points="${p([up(bd), up(bwd), bwd, bd])}"/>`
     + `<polygon fill="${right}" points="${p([up(bw), up(bwd), bwd, bw])}"/>`
     + `<polygon fill="${top}" points="${p([up(b), up(bw), up(bwd), up(bd)])}"/>`;
 }).join('');
 
+// Crop to the tallest block so the empty start of the year leaves no gap above.
+const top = minY - 26;
 const W = ox + cal.weeks.length * WK[0] + 8;
 const H = oy + cal.weeks.length * WK[1] + 7 * DY[1] + 8;
 const label = `${cal.totalContributions.toLocaleString('en-US')} contributions in the last year`;
 
-writeFileSync(out, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W.toFixed(0)} ${H.toFixed(0)}" width="${W.toFixed(0)}" height="${H.toFixed(0)}">`
-  + `<text x="8" y="16" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8b8f96">${label}</text>`
+writeFileSync(out, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 ${top.toFixed(0)} ${W.toFixed(0)} ${(H - top).toFixed(0)}" width="${W.toFixed(0)}" height="${(H - top).toFixed(0)}">`
+  + `<text x="8" y="${(top + 14).toFixed(0)}" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9" fill="#8b8f96">${label}</text>`
   + `${shapes}</svg>\n`);
 console.log(`${out}: ${label}`);
