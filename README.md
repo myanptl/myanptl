@@ -19,8 +19,6 @@ I'm a junior in MA. I built FocusOS and co-founded NYE Media.
 <a href="https://rosensweig.vercel.app">rosensweig</a>
 </samp>
 
-<img src="https://raw.githubusercontent.com/myanptl/myanptl/output/calendar.svg" alt="My contribution calendar as 3D blocks" width="100%">
-
 <samp>
 <a href="https://myanptl.vercel.app">portfolio</a> ·
 <a href="https://www.linkedin.com/in/myan-patel-1857943ba/">linkedin</a> ·
